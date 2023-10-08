@@ -71,8 +71,10 @@ func report(protocol string, environment string, kind string, filesToSend int, s
 	// }
 }
 
+// wmnlab: 192.168.1.79
+
 func main() {
-	host := flag.String("host", "127.0.0.1", "Host to connect")
+	host := flag.String("host", "192.168.1.79", "Host to connect")
 	environment := flag.String("env", "Local", "Environment name")
 	quicPort := flag.Int("quic", 4242, "QUIC port to connect")
 	flag.Parse()
